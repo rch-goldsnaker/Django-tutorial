@@ -1,0 +1,30 @@
+En esta clase se instala Django,
+Para lo cual deberiamos tener instalado Python previamente.
+
+CREAR UN PROYECTO
+------------------
+
+Para craer un proyecto en Django colocamos el siguiente comando:
+
+"django-admin startproject Proyecto1"
+
+MIGRAR UN PROYECTO
+------------------
+
+para migrar un proyecto tendremos que estar ubicados en la carpeta del proyecto
+y colocar el siguiente comando:
+
+"python manage.py migrate"
+
+EJECUTAR SERVIDOR
+----------------
+
+Ubicarse en la carpeta de proyecto
+Se coloca el siguiente comando:
+
+"python manage.py runserver"
+
+PARAR SERVIDOR
+--------------
+
+CRT + C

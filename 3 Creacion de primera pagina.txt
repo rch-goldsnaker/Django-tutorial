@@ -1,0 +1,33 @@
+Dentro de la carpeta Proyecto1
+
+crearemos un archivo "view.py"
+
+Importamos el modulo HttpResponse
+
+Para crear una vista lo hacemos mediante una funcion :
+Tener en cuenta tiene que recibir un request como argumento.
+es como una funcion vista.
+
+def saludo(request):
+    return HttpResponse("Hola esta la primer pagina con rango")
+
+#ahora debemos enlazar esta vista con un URLS, de aca vamos al
+# archivo urls.py 
+
+#agregamos una URL y la funcion vista.
+
+urlpatterns = [
+    path('saludo/', saludo),
+    ]
+
+#agregamos donde esta ubicado la vista
+
+from Proyecto1.views  import saludo
+
+la nueva vista esta en la direccion:
+
+http://127.0.0.1:8000/saludo/
+
+de la misma forma creamos una vista "despedida()"
+
+http://127.0.0.1:8000/nosveremos/
